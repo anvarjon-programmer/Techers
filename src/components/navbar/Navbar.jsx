@@ -5,6 +5,10 @@ import { removeItem } from "../../helpers/persistance-storage";
 import { logoutUser } from "../../slice/auth";
 import { FaBars } from "react-icons/fa";
 import { useState } from "react";
+import { TiWarning } from "react-icons/ti";
+import { IoChatbubbles } from "react-icons/io5";
+import { IoChatbubblesOutline } from "react-icons/io5";
+import { PiBellSimpleRinging } from "react-icons/pi";
 
 const Navbar = () => {
   const {loggedIn,user} = useSelector(state => state.auth);
@@ -24,11 +28,11 @@ const Navbar = () => {
   return (
     <header>
 
-<nav className={`${isMenuOpen ? 'h-[50vh] bg-black fixed right-0 left-0  z-50' : 'h-[100px] bg-red-500'} w-full transation-all md:block md:w-auto`} >
+<div className={`${isMenuOpen ? 'h-[50vh] bg-black fixed right-0 left-0  z-50' : 'h-[100px] bg-black'} w-full transation-all md:block md:w-auto`} >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           {/* <img  src={logo} className=" w-[175px]" alt="Flowbite Logo" /> */}
-          Logo
+          Home
         </Link>
          <div className='flex items-center gap-8'>
           <button
@@ -77,19 +81,39 @@ const Navbar = () => {
             ) : ''
           }
          </div>
-    </nav>
-
-
-        <div className="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom container pt-2">
-        <Link to='/'>
+  </div>
+        <div className="bg-[#22AAD8] h-[10vh] flex items-center justify-center">
+         <div className="container d-flex flex-column flex-md-row align-items-center  mb-4  pt-2">
+         <Link to='/'>
             {/* <img src={logo} alt="" width={100} height={20}/> */}
             <h1>Home</h1>
         </Link>
       <nav className="d-inline-flex mt-2 mt-md-0 ms-md-auto">
         {loggedIn ? (
           <>
-          <p className="me-3 py-2 m-0 link-body-emphasis text-decoration-none">{user.username}</p>
-          <button className="btn btn-outline-danger" onClick={loggoutHandler}>Logout</button>
+          <ul className="flex items-center gap-3">
+            <li className="bg-white rounded-[50%] h-[50px] w-[50px] flex items-center justify-center">
+              <Link to={'/'} >
+              <TiWarning className="text-[#FEA910] text-[30px]"/>
+              </Link>
+            </li>
+            <li className="bg-white rounded-[50%] h-[50px] w-[50px] flex items-center justify-center">
+              <Link to={'/'} >
+              <IoChatbubblesOutline className=" text-[30px]"/>
+              </Link>
+            </li>
+            <li className="bg-white rounded-[50%] h-[50px] w-[50px] flex items-center justify-center">
+              <Link to={'/'} >
+              <PiBellSimpleRinging className=" text-[30px]"/>
+              </Link>
+            </li>
+            <li>
+              <p className="me-3 py-2 m-0 link-body-emphasis text-decoration-none">{user.username}</p>
+            </li>
+            <li>
+              <button className="btn btn-outline-danger" onClick={loggoutHandler}>Logout</button>
+            </li>
+          </ul>
           </>
         ): (
           <>
@@ -100,6 +124,7 @@ const Navbar = () => {
     
         {/* <a className="py-2 link-body-emphasis text-decoration-none" href="#">Pricing</a> */}
       </nav>
+         </div>
     </div>
     </header>
   )

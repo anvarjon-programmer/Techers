@@ -2,6 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import Loader from '../ui/loader/Loader'
 import { useNavigate } from 'react-router-dom'
+import Cart from '../cart/Cart'
 
 const Main = () => {
   const {articles,isLoading} = useSelector(state => state.article)
@@ -9,10 +10,12 @@ const Main = () => {
   return (
     <>
       {isLoading && <Loader/>}
+
       <div className="album py-5">
     <div className='container'>
+       <Cart/>
       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        {/* {articles.map(item =>(
+        {articles.map(item =>(
         <div className="col" key={item.id}>
           <div className="card h-100 shadow-sm">
             <svg className="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -32,7 +35,7 @@ const Main = () => {
               </div>
           </div>
         </div>
-      ))} */}
+      ))}
       </div>
     </div>
   </div>
