@@ -14,3 +14,4 @@ const Input = ({label, state, setState, type = 'text'}) => {
 }
 
 export default Input
+      
