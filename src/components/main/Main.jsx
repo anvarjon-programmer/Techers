@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux'
 import Loader from '../ui/loader/Loader'
 import { useNavigate } from 'react-router-dom'
 import Cart from '../cart/Cart'
+import { cartData } from '../../constants/cartData'
 
 const Main = () => {
   const {articles,isLoading} = useSelector(state => state.article)
@@ -13,8 +14,12 @@ const Main = () => {
 
       <div className="album py-5">
     <div className='container'>
-       <Cart/>
-      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+       <div className='flex items-center justify-between'>
+       {cartData.map((item,index) =>(
+        <Cart key={index} title={item.title} number={item.number} icons={item.icons}/>
+       ))}
+       </div>
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-16">
         {articles.map(item =>(
         <div className="col" key={item.id}>
           <div className="card h-100 shadow-sm">
