@@ -1,0 +1,62 @@
+{
+    "users": [
+      {
+        "name": "Juliet Omann",
+        "email": "hello@gmail.com",
+        "phone": "",
+        "id": "1",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s"
+      },
+      {
+        "id": "2",
+        "name": "Juliet",
+        "username": "Anvarjon",
+        "email": "julie@yahoo.com",
+        "phone": "08100000000",
+        "website": "unsplash",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s"
+      },
+      {
+        "id": "bf77",
+        "name": "Anvarjon Tojiboyev",
+        "email": "mranvarjontojiboyev@gmail.com",
+        "phone": "8999262787",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s"
+      },
+      {
+        "id": "67c4",
+        "name": "Anvarjon Tojiboyev",
+        "email": "mranvarjontojiboyev@gmail.com",
+        "phone": "8999262787",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s"
+      },
+      {
+        "id": "9b47",
+        "name": "Anvarjon Tojiboyev",
+        "email": "mranvarjontojiboyev@gmail.com",
+        "phone": "8999262787",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s"
+      },
+      {
+        "id": "3aad",
+        "name": "Anvarjon Tojiboyev",
+        "email": "mranvarjontojiboyev@gmail.com",
+        "phone": "8999262787",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s"
+      },
+      {
+        "id": "c05d",
+        "name": "Anvarjon Tojiboyev",
+        "email": "hello@gmail.com",
+        "phone": "8999262787",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s"
+      },
+      {
+        "id": "dc72",
+        "name": "Anvarjon ",
+        "email": "hello@gmail.com",
+        "phone": "8999262787",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s"
+      }
+    ]
+  }
