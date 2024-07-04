@@ -70,6 +70,9 @@ const Navbar = () => {
             <li>
               <Link className="text-[20px] text-white" to='/'>Bosh Sahifa</Link>
             </li>
+            <li>
+              <Link className="text-[20px] text-white" to='/'>Bosh Sahifa</Link>
+            </li>
           </ul>
             ) : ''
           }
